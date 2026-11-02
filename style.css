@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    background-color: white;
+    color: #172033;
+}
+
+header {
+    background-color: #0f172a;
+    color: white;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+    position: relative;
+    font-size: 14px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: #22c55e;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+
+nav a:hover {
+    color: #22c55e;
+    text-underline-offset: 6px;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+nav h2  {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    transition: color 0.3s ease;
+    font-size: 18px;
+}
+
+nav h2:hover {
+    color: #22c55e;
+}
+
+
+.villian {
+    text-align: center;
+    padding: 40px 20px;
+    color: #1d4ed8;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: #e0f2fe;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.villian h1 {
+    font-size: 56px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px #22c55e;
+    color: #1d4ed8;
+}
+
+.villian a {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.villian a:hover {
+    background-color: #1d4ed8;
+    transform: translate(-8px);
+    transition: 0.3s;
+    display: inline-block;
+    box-shadow: 0 8px 30px rgba(34, 197, 94, 0.4);
+}
+
+#about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.villian h3 {
+    font-size: 48px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 15px 20px;
+    line-height: 1;
+}
+
+.villian:hover {
+    transform: translate(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.villian p {
+    line-height: 2;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 601px) and (max-width:900px) {
+    .villian {
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 35px 24px;
+    }
+
+      .villian h1 {
+        font-size: 44px;
+    }
+
+    .villian h3 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .villian p {
+        max-width: 100%;
+        line-height: 1.6;
+    }
+
+    .villian a {
+        font-size: 14px;
+        padding: 15px 30px;
+    }
+
+}
+
+#projects {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#projects h2  {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.project-card {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0 , 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    color: #1d4ed8;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    line-height: 1.6;
+}
+
+.project-card span {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 14px;
+    background: #dcfce7;
+    color: #15803d;
+    border-radius: 20px;
+}
+
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f1f5f9;
+}
+
+#contact h2 {
+    font-size: 32px;
+    color: #1d4ed8;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+#contact a {
+    display: inline-block;
+    background-color: #22c55e;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+#contact a:hover S{
+    background-color: #15803d;
+    transform: translateY(-4px);
+}
